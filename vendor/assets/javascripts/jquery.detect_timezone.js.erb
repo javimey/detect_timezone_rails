@@ -430,7 +430,7 @@
 
     var settings = {
       'debug' : false,
-      'default' : '<%= Time.zone.tzinfo.identifier %>'
+      'default' : '<%= ActiveSupport::TimeZone.new("UTC") %>'
     };
 
     if(options) {
